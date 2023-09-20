@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viagens - Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./src/pages/destino/index.html">Destinos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./src/pages/promocoes/index.html">Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./src/pages/contato/index.html">Contato</a>
+          </li>
+        </ul>
+        <div class="col">
+          <form class="d-flex offset-md-6 ">
+            <input class="form-control me-2" type="search" placeholder="Para onde vamos?" aria-label="Pesquisar">
+            <button class="btn btn-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Conteúdo da Página Home -->
+  <div class="foto-home position-relative">
+    <!-- Inicio da sessão banner -->
+    <section class="banner">
+      <div class="container py-5 text-light">
+        <form class="z-10 position-relative row g-3 p-3 mt-2 rounded-3 bg-light text-dark">
+          <div class="col-md-4">
+            <label for="validation01" class="form-label">De onde você está saindo?</label>
+            <input type="search" class="form-control" id="validation01" placeholder="Busque um aeroporto">
+          </div>
+          <div class="col-md-4">
+            <label for="validation02" class="form-label">Qual o seu destino?</label>
+            <input type="search" class="form-control" id="validation02" placeholder="Indo pra onde?">
+          </div>
+          <div class="col-md-4">
+            <label for="validationdate" class="form-label">Data de partida</label>
+            <input type="date" class="form-control" id="validationdate" aria-describedby="inputGroupPrepend">
+          </div>
+          <div class="col-md-6">
+            <label for="validation03" class="form-label">Data de retorno</label>
+            <input type="date" class="form-control" id="validation03">
+          </div>
+          <div class="col-md-3">
+            <label for="validation04" class="form-label">Passageiros</label>
+            <input type="number" min="1" max="4" maxlength="1" class="form-control" id="validation04"
+              placeholder="N° passageiros">
+          </div>
+          <div class="col-md-12 d-flex justify-content-end">
+            <button class="btn btn-success fw-bold px-5 " type="submit">Pesquisar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!--Final da sessão Banner-->
+
+
+  <!-- Cards de Destinos -->
+  <div class="row container">
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="./src/assets/img/portugal.jpg" class="card-img-top" alt="Destino 1">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Portugal</h5>
+          <hr>
+          <p class="card-text ">Indicado para viajantes que desejam conhecer Portugal.</p>
+          <hr>
+          <p class="card-text fw-bold">
+            de <s class="text-danger">R$ 2.734,00</s>
+          </p>
+          <p class="card-text fw-bold">
+            por <span class="text-success fs-3">R$ 2.490,00</span>
+            <span class="text-secundary">ou 10x de R$ 249,00</span>
+          </p>
+          <a href="./src/pages/destino/index.html" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="./src/assets/img/Andorra.jpg" class="card-img-top" alt="Destino 2">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Andorra</h5>
+          <hr>
+          <p class="card-text ">Indicado para viajantes que desejam conhecer Andorra.</p>
+          <hr>
+          <p class="card-text fw-bold">
+            de <s class="text-danger">R$ 4.741,00</s>
+          </p>
+          <p class="card-text fw-bold">
+            por <span class="text-success fs-3">R$ 3.900,00</span>
+            <span class="text-secundary">ou 10x de R$ 390,00</span>
+          </p>
+          <a href="./src/pages/promocoes/index.html" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="./src/assets/img/machu.webp" class="card-img-top" alt="Destino 3">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Machu Picchu</h5>
+          <hr>
+          <p class="card-text ">Indicado para viajantes que desejam conhecer Machu Picchu.</p>
+          <hr>
+          <p class="card-text fw-bold">
+            de <s class="text-danger">R$ 2.400,00</s>
+          </p>
+          <p class="card-text fw-bold">
+            por <span class="text-success fs-3">R$ 1.990,00</span>
+            <span class="text-secundary">ou 10x de R$ 199,00</span>
+          </p>
+          <a href="./src/pages/promocoes/index.html" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

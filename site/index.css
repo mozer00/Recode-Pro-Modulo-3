@@ -1,0 +1,93 @@
+/* Adicione estilos personalizados aqui, se necessário */
+/* styles.css */
+
+/* Estilos gerais */
+* {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+  
+  /* Estilos Navbar */
+  .navbar {
+    background-color: rgba(65, 64, 66, 0.11);
+    border-bottom: 1px solid #d1d1d1;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-link {
+    color: #333;
+  }
+  
+  /* Estilos para os Títulos */
+  h1, h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para o Conteúdo */
+  p {
+    color: #555;
+  }
+  
+  /* Estilos para os Botões */
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para Links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+  /*Página Home */
+  .foto-home{
+    background-image:url(./src/assets/img/banner.webp);
+
+  }
+  .foto-home::before {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63) 0%, rgba(196, 196, 196, 0) 100%);
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
