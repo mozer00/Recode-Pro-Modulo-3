@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viagens - Cadastro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="../../../index.html">Viagens</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../destino/index.html">Destinos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../promocoes/index.html">Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contato/index.html">Contato</a>
+          </li>
+        </ul>
+        <div class="col">
+          <form class="d-flex offset-md-6 ">
+            <input class="form-control me-2" type="search" placeholder="Para onde vamos?" aria-label="Pesquisar">
+            <button class="btn btn-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo da Página Cadastro -->
+  <form class="container row g-3 p-3 mt-2 bg-light text-dark">
+    <h3>Cadastrar Cliente</h3>
+    <div class="form-group">
+      <label for="nomeCliente">Nome:</label>
+      <input type="text" class="form-control" id="nomeCliente" placeholder="Nome do Cliente">
+    </div>
+    <div class="form-group">
+      <label for="cpfCliente">CPF:</label>
+      <input type="text" class="form-control" id="cpfCliente" placeholder="CPF do Cliente">
+    </div>
+    <div class="form-group">
+      <label for="telefoneCliente">Telefone:</label>
+      <input type="text" class="form-control" id="telefoneCliente" placeholder="Telefone do Cliente">
+    </div>
+    <button type="submit" class="btn btn-success fw-bold">Cadastrar Cliente</button>
+  </form>
+
+  <form class="container row g-3 p-3 mt-2 bg-light text-dark">
+    <h3>Cadastrar Destino</h3>
+    <div class="form-group">
+      <label for="cidadeDestino">Cidade:</label>
+      <input type="text" class="form-control" id="cidadeDestino" placeholder="Cidade do Destino">
+    </div>
+    <div class="form-group">
+      <label for="paisDestino">País:</label>
+      <input type="text" class="form-control" id="paisDestino" placeholder="País do Destino">
+    </div>
+    <div class="form-group">
+      <label for="valorPassagem">Valor da Passagem:</label>
+      <input type="text" class="form-control" id="valorPassagem" placeholder="Valor da Passagem">
+    </div>
+    <button type="submit" class="btn btn-success fw-bold">Cadastrar Destino</button>
+  </form>
+
+  <form class="container row g-3 p-3 mt-2 bg-light text-dark">
+    <h3>Cadastrar Viagem</h3>
+    <div class="form-group">
+      <label for="clienteViagem">Cliente:</label>
+      <select class="form-control" id="clienteViagem">
+        <!-- Opções para selecionar um cliente -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="destinoViagem">Destino:</label>
+      <select class="form-control" id="destinoViagem">
+        <!-- Opções para selecionar um destino -->
+      </select>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="dataIda">Data de Ida:</label>
+      <input type="date" class="form-control" id="dataIda">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="dataVolta">Data de Volta:</label>
+      <input type="date" class="form-control" id="dataVolta">
+    </div>
+    <div class="form-group">
+      <label for="valorDiaria">Valor da Diária:</label>
+      <input type="text" class="form-control" id="valorDiaria" placeholder="Valor da Diária">
+    </div>
+    <button type="submit" class="btn btn-success fw-bold">Cadastrar Viagem</button>
+  </form>
+
+
+  <!-- Rodapé -->
+  <br><br>
+  <footer class=" footer text-center ">
+    <p>&copy; 2023 Copyright: Viagens</p>
+
+    <a href="../../../index.html" class="btn btn-outline-success">Voltar a Home</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
