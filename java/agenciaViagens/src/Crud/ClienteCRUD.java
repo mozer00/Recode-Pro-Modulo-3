@@ -69,7 +69,7 @@ public class ClienteCRUD {
 					id = s.nextInt();
 					s.nextLine();
 
-					clienteDAO.removeById(1);
+					clienteDAO.removeById(id);
 					break;
 
 				case 5:
